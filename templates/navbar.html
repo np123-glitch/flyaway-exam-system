@@ -1,8 +1,8 @@
 {% load my_extras %}
-<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top mb-4">
+<nav class="navbar navbar-expand-md sticky-top mb-4" style="background-color: #ff6600; color: white;">
     <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand font-weight-bold" href="#">Online Examination System</a>
+        <a class="navbar-brand font-weight-bold" href="#" style="color: white;">FlyAway Virtual Flight School Exam System</a>
 
         <!-- Toggler Button -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-links">
@@ -11,47 +11,47 @@
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbar-links">
-            <ul class="navbar-nav  ml-auto">
+            <ul class="navbar-nav  ml-auto" style="color: white;">
                 {% if user.is_authenticated %}
                     {% if user.is_student %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'students:exams_list' %}">Active exams</a>
+                            <a class="nav-link" href="{% url 'students:exams_list' %}" style="color: white;">Active exams</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'students:result_list' %}">Results</a>
+                            <a class="nav-link" href="{% url 'students:result_list' %}" style="color: white;">Results</a>
                         </li>
                     {% endif %}
                     {% if user.is_teacher %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'exams_list' %}">Your exams</a>
+                            <a class="nav-link" href="{% url 'exams_list' %}" style="color: white;">Your exams</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'teachers:students_list' %}">Students' profiles</a>
+                            <a class="nav-link" href="{% url 'teachers:students_list' %}" style="color: white;">Students' profiles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'teachers:students_request_list' %}">Students' profile requests</a>
+                            <a class="nav-link" href="{% url 'teachers:students_request_list' %}" style="color: white;">Students' profile requests</a>
                         </li>
                     {% endif %}
                     {% if user.is_hod %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'hod:teachers_list' %}">Teachers' profiles</a>
+                            <a class="nav-link" href="{% url 'hod:teachers_list' %}" style="color: white;">Teachers' profiles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'hod:teachers_request_list' %}">Teachers' profile requests</a>
+                            <a class="nav-link" href="{% url 'hod:teachers_request_list' %}" style="color: white;">Teachers' profile requests</a>
                         </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'users:profile' %}">Profile</a>
+                        <a class="nav-link" href="{% url 'users:profile' %}" style="color: white;">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                        <a class="nav-link" href="{% url 'logout' %}" style="color: white;">Logout</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'login' %}" style="color: white;">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'users:register' %}">Register</a>
+                        <a class="nav-link" href="{% url 'users:register' %}" style="color: white;">Register</a>
                     </li>
                 {% endif %}
             </ul>

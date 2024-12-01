@@ -3,26 +3,15 @@ from django.core.validators import MinValueValidator
 from django.db import models
 
 STANDARD_CHOICES = (
-    ("FE", "FE"),
-    ("SE", "SE"),
-    ("TE", "TE"),
-    ("BE", "BE"),
+    ("EX", "EX"),
 )
 
 BRANCH_CHOICES = (
-    ("CIVIL", "Civil Engineering"),
-    ("COMP", "Computer Engineering"),
-    ("EL", "Electrical Engineering"),
-    ("ENTC", "Electronics and Telecommunication Engineering"),
-    ("IT", "Information Technology"),
-    ("ME", "Mechanical Engineering"),
-    ("AI&DS", "Artificial Intelligence & Data Science"),
-    ("AR", "Automation & Robotics"),
+    ("MAIN", "Main Exam System"),
 )
 
 DIVISION_CHOICES = (
     ("A", "A"),
-    ("B", "B"),
 )
 
 
