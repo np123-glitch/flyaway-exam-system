@@ -64,5 +64,5 @@ urlpatterns = [
     path("", include("core.urls")),
 ]
 
-admin.site.site_header = 'FlyAway Virtual FLight School Admin Panel'
-admin.site.site_title = 'FlyAway Virtual FLight School Admin Panel'
+admin.site.site_header = 'FlyAway Virtual Flight School Admin Panel'
+admin.site.site_title = 'FlyAway Virtual Flight School Admin Panel'
