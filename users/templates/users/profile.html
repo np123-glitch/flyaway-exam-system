@@ -21,7 +21,6 @@
             {% if user.is_teacher %}
                 <a href="{% url 'users:teacher_profile' %}">Teacher Profile</a> | 
             {% endif %}
-            <a href="{% url 'password_reset' %}">Reset Password</a>
         </div>
     </div>
 {% endblock content %}
