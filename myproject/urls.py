@@ -63,3 +63,6 @@ urlpatterns = [
     path("students/", include("students.urls", namespace="students")),
     path("", include("core.urls")),
 ]
+
+admin.site.site_header = 'FlyAway Virtual FLight School Admin Panel'
+admin.site.site_title = 'FlyAway Virtual FLight School Admin Panel'
